@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-duoble F(double x) {
+double F(double x) {
     if ( x <= 0 ) {
         return cos(x);
     } else {
