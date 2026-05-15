@@ -12,7 +12,7 @@ int main() {
     std::string word;
     std::vector<std::string> words;
 
-    // Сохраняем слова в вектор для удобства выполнения всех пунктов
+  
     while (ss >> word) {
         words.push_back(word);
     }
@@ -32,8 +32,6 @@ int main() {
 
     std::cout << "\nв) Слова длиной не менее 5 букв:\n";
     for (const auto& w : words) {
-        // Учитываем, что в кириллице один символ может занимать больше 1 байта
-        // Но для базовых задач обычно достаточно w.length()
         if (w.length() >= 5) std::cout << w << std::endl;
     }
 
